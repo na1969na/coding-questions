@@ -5,10 +5,8 @@ export default function setCancellableTimeout(
   delay?: number,
   ...args: Array<any>
 ): () => void {
-  // setInterval でタイマーを開始
   const timerId = setInterval(callback, delay, ...args);
 
-  // タイマーをキャンセルする関数を返す
   return () => {
     clearInterval(timerId);
   };
