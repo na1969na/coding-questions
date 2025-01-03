@@ -1,5 +1,5 @@
 /*
-20. Function.prototype.apply
+19. Function.prototype.apply
 
 Implement your own Function.prototype.apply without calling the native apply method.
 To avoid overwriting the actual Function.prototype.apply, implement the function as Function.prototype.myApply.
